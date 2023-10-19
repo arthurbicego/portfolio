@@ -5,15 +5,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 4rem 0 0 0;
-}
-
-.section-contact h2 {
-  margin-bottom: 2rem;
+  padding: 3rem 0 0 0;
 }
 
 footer {
-  margin-top: -1rem;
+  margin-top: -0.5rem;
 }
 
 form {
@@ -74,7 +70,7 @@ form textarea {
   border-radius: 50%;
   color: #ffbb5c;
   text-decoration: none;
-  margin: 4rem 1rem;
+  margin: 2rem 1rem;
 }
 
 .social-media i {
@@ -85,4 +81,10 @@ form textarea {
   background-color: #ffbb5c;
   color: #eee;
   box-shadow: 0 0 1rem #ffbb5c;
+}
+
+@media (max-width: 600px) {
+  .section-contact {
+    padding: 2rem 0 0 0;
+  }
 }

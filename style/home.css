@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
+  margin: 4rem 0 0 0;
 }
 
 .cv p {
@@ -51,4 +51,19 @@
   background-color: #ffbb5c;
   color: #eee;
   box-shadow: 0 0 1rem #ffbb5c;
+}
+
+@media (max-width: 600px) {
+  .section-home img {
+    margin-top: 2rem;
+    max-width: 8rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .cv {
+    margin: 1rem;
+  }
 }

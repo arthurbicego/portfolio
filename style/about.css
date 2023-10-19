@@ -6,11 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 4rem 0;
-}
-
-.section-about h2 {
-  margin-bottom: 2rem;
+  padding: 3rem 0;
 }
 
 .section-about p {
@@ -23,7 +19,7 @@
 
 .skills-container {
   width: 100%;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
 .skills {
@@ -51,4 +47,14 @@
   background: transparent;
   font-size: 4rem;
   color: #ffbb5c;
+}
+
+@media (max-width: 600px) {
+  .section-about {
+    padding: 2rem 0;
+  }
+
+  .skills-container {
+    padding: 2rem 0;
+  }
 }
