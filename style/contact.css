@@ -1,0 +1,88 @@
+/* CONTACT SECTION */
+.section-contact {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4rem 0 0 0;
+}
+
+.section-contact h2 {
+  margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: -1rem;
+}
+
+form {
+  width: auto;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+  margin: 2rem 0;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 0.2rem 0;
+  opacity: 0.5;
+}
+
+.section-contact button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #ffbb5c;
+  color: #fff;
+  margin: 2rem 0;
+  padding: 0.5rem;
+  border: 0.1rem solid #ffbb5c;
+}
+
+.section-contact button:hover {
+  box-shadow: 0 0 1rem #ccc;
+  transition: 0.5s ease;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.15rem solid #ffbb5c;
+  border-radius: 50%;
+  color: #ffbb5c;
+  text-decoration: none;
+  margin: 4rem 1rem;
+}
+
+.social-media i {
+  font-size: 3rem;
+}
+
+.section-contact a:hover {
+  background-color: #ffbb5c;
+  color: #eee;
+  box-shadow: 0 0 1rem #ffbb5c;
+}

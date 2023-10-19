@@ -1,0 +1,39 @@
+.slider-ct {
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.slide-wr {
+  position: relative;
+  flex-wrap: nowrap;
+}
+#sec div {
+  display: block;
+  background-color: #aaecaa;
+  padding: 10px 20px;
+  float: left;
+  margin: 5px 2px;
+  transform: translateX(0px);
+}
+#sec:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.slide {
+  min-height: 200px;
+  text-align: center;
+  line-height: 180px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: arial;
+}
+#back {
+  position: absolute;
+  top: 45%;
+}
+#forward {
+  position: absolute;
+  top: 45%;
+  right: 0;
+}

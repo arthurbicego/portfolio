@@ -1,0 +1,146 @@
+/* PORTFOLIO SECTION */
+.section-portfolio {
+  /* 100vh - 7vh (navbar) */
+  min-height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.section-portfolio h2 {
+  margin-bottom: 2rem;
+}
+
+.github-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  color: #ffbb5c;
+  border: 0.15rem solid #ffbb5c;
+  border-radius: 50%;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.github-icon i {
+  font-size: 3rem;
+}
+
+.github-icon:hover {
+  background-color: #ffbb5c;
+  color: #eee;
+  box-shadow: 0 0 1.5rem #ffbb5c;
+  transition: 0.5s ease;
+}
+
+.portfolio-container {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  width: 22rem;
+  height: 32rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 20rem;
+  height: 30rem;
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card:hover {
+  .card-image {
+    filter: contrast(100%);
+  }
+}
+
+.card-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: contrast(50%);
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s ease;
+  display: block;
+  padding-top: 66.6%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  flex: 1;
+  padding: 1rem;
+}
+
+.btn {
+  background-color: white;
+  border: 0.1rem solid #ccc;
+  color: #ccc;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  display: block;
+  width: 50%;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.btn:hover {
+  box-shadow: 0 0 1rem #ccc;
+  transition: 0.5s ease;
+}
+
+.btn-site {
+  background-color: #ffbb5c;
+  color: white;
+  border: 0.1rem solid #ffbb5c;
+}
+
+.card-image--flowers {
+  background-image: url(https://unsplash.it/800/600?image=82);
+}
+
+.card-image--river {
+  background-image: url(https://unsplash.it/800/600?image=11);
+}
+
+.card-image--record {
+  background-image: url(https://unsplash.it/800/600?image=39);
+}
+
+.card-image--fence {
+  background-image: url(https://unsplash.it/800/600?image=59);
+}
+
+.card-title {
+  opacity: 0.5;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+.card-text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 1rem;
+}
