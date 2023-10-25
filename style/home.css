@@ -27,6 +27,8 @@
 }
 
 .cv p {
+  font-weight: 700;
+  padding: 0.75rem;
   color: #000;
 }
 

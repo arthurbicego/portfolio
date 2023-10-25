@@ -8,10 +8,6 @@
   padding: 3rem 0 0 0;
 }
 
-footer {
-  margin-top: -0.5rem;
-}
-
 form {
   width: auto;
   height: 55vh;
@@ -34,6 +30,7 @@ form textarea {
   border: 1px solid #ccc;
   margin: 0.2rem 0;
   opacity: 0.5;
+  padding: 0.25rem 0.5rem;
 }
 
 .section-contact button {
