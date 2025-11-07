@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfólio de Desenvolvedor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec80",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102219",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen">
+<!-- Lado A: Painel Fixo -->
+<aside class="fixed top-0 left-0 flex h-full w-full max-w-xs flex-col justify-between border-r border-gray-200/50 bg-background-light p-8 dark:border-gray-800/50 dark:bg-background-dark lg:max-w-sm">
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Foto de perfil de um desenvolvedor sorrindo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCRejlDdgjLDL33_ZKKfmK93k02qTtkAHjhowXPWgTmtB03Wd_TjxYGe2NN2f3yH95bcTWsfwUh8dMV9DCmXUOhKo8vTr7EJE2wF7ip6h0hOJZfa8kuEUnFUh43bJUHndkrYKKc6taOftBDVhA9DnnR2NLPLydZGUEckIYwDZYYM8wzisKuuSD1LvBODMNeRs4LIKQUVnjnIkowDqy3zZJGFJoyszEi2_DsnRSPBKdEHl-f-eYI_bYRlx6guzd-MXpnnirIggKuakA");'></div>
+<div class="flex flex-col">
+<h1 class="text-lg font-bold text-gray-900 dark:text-white">Alexandre Vianna</h1>
+<p class="text-sm text-gray-600 dark:text-gray-400">Full Stack Developer</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="group flex items-center gap-3 rounded-lg bg-primary/20 px-3 py-2 transition-colors dark:bg-primary/30" href="#sobre">
+<span class="material-symbols-outlined text-gray-900 dark:text-white">person</span>
+<p class="font-medium text-gray-900 dark:text-white">Sobre</p>
+</a>
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-gray-100 dark:hover:bg-white/5" href="#projetos">
+<span class="material-symbols-outlined text-gray-600 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white">code_blocks</span>
+<p class="font-medium text-gray-600 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white">Projetos</p>
+</a>
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-gray-100 dark:hover:bg-white/5" href="#contato">
+<span class="material-symbols-outlined text-gray-600 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white">mail</span>
+<p class="font-medium text-gray-600 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white">Contato</p>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-2">
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-gray-100 dark:hover:bg-white/5" href="#">
+<svg aria-hidden="true" class="h-6 w-6 fill-gray-600 group-hover:fill-gray-900 dark:fill-gray-400 dark:group-hover:fill-white" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path></svg>
+<p class="font-medium text-gray-600 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white">GitHub</p>
+</a>
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-gray-100 dark:hover:bg-white/5" href="#">
+<svg aria-hidden="true" class="h-6 w-6 fill-gray-600 group-hover:fill-gray-900 dark:fill-gray-400 dark:group-hover:fill-white" viewbox="0 0 24 24"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 114.75 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>
+<p class="font-medium text-gray-600 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white">LinkedIn</p>
+</a>
+</div>
+</aside>
+<!-- Lado B: Conteúdo Principal -->
+<main class="ml-auto w-full max-w-[calc(100%-18rem)] flex-1 pl-8 pr-16 py-12 lg:max-w-[calc(100%-24rem)]">
+<div class="mx-auto max-w-4xl">
+<!-- Seção Sobre Mim -->
+<section class="mb-16 scroll-mt-24" id="sobre">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Sobre Mim</h2>
+<p class="mt-4 text-base leading-relaxed text-gray-600 dark:text-gray-400">
+                        Sou um desenvolvedor Full Stack apaixonado por criar soluções eficientes e elegantes para problemas complexos. Com experiência em todo o ciclo de vida do desenvolvimento de software, busco transformar ideias em produtos digitais robustos, escaláveis e com ótima experiência de usuário.
+                    </p>
+<h3 class="mt-8 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Habilidades &amp; Tecnologias</h3>
+<div class="mt-4 flex flex-wrap gap-3">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 px-4 py-1.5 dark:bg-primary/30"><p class="text-sm font-medium text-gray-900 dark:text-white">React</p></div>
+<div class="flex items-center justify-center rounded-lg bg-primary/20 px-4 py-1.5 dark:bg-primary/30"><p class="text-sm font-medium text-gray-900 dark:text-white">Node.js</p></div>
+<div class="flex items-center justify-center rounded-lg bg-primary/20 px-4 py-1.5 dark:bg-primary/30"><p class="text-sm font-medium text-gray-900 dark:text-white">TypeScript</p></div>
+<div class="flex items-center justify-center rounded-lg bg-primary/20 px-4 py-1.5 dark:bg-primary/30"><p class="text-sm font-medium text-gray-900 dark:text-white">Python</p></div>
+<div class="flex items-center justify-center rounded-lg bg-primary/20 px-4 py-1.5 dark:bg-primary/30"><p class="text-sm font-medium text-gray-900 dark:text-white">Docker</p></div>
+<div class="flex items-center justify-center rounded-lg bg-primary/20 px-4 py-1.5 dark:bg-primary/30"><p class="text-sm font-medium text-gray-900 dark:text-white">AWS</p></div>
+<div class="flex items-center justify-center rounded-lg bg-primary/20 px-4 py-1.5 dark:bg-primary/30"><p class="text-sm font-medium text-gray-900 dark:text-white">PostgreSQL</p></div>
+<div class="flex items-center justify-center rounded-lg bg-primary/20 px-4 py-1.5 dark:bg-primary/30"><p class="text-sm font-medium text-gray-900 dark:text-white">Figma</p></div>
+</div>
+</section>
+<!-- Seção Projetos -->
+<section class="mb-16 scroll-mt-24" id="projetos">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Projetos em Destaque</h2>
+<div class="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2">
+<!-- Card de Projeto 1 -->
+<div class="group flex flex-col overflow-hidden rounded-xl border border-gray-200/50 bg-background-light shadow-sm transition-all hover:shadow-lg dark:border-gray-800/50 dark:bg-background-dark dark:hover:shadow-primary/10">
+<div class="aspect-video w-full overflow-hidden">
+<div class="bg-center bg-no-repeat h-full w-full bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Screenshot de uma aplicação de gerenciamento de tarefas" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7umnMezgGy1dXtpaAWIWOvfn6twPfT5MyatedZQ3-gdekyrXAMEgc4ODeQgXUf10FFTmT8pJ1S2vh4DeMYew0K-qImyXccPFik-6v2MtrohonOi2yWdynHDfMWDzDsq8RaU7KrEvIs6zJLjc9Vft_piy4r90ZDiHarVgBDMC3yADVA8dbbO-6YaG-Tx1w_bjdO3dRNq6n_SW5lXsB-CDn7DKGwTpVXnMJLFkLa-5hwtywYV6kYOzH4yX5gjeIC5eJ11tMqN5j8kA");'></div>
+</div>
+<div class="flex flex-1 flex-col p-6">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Plataforma de E-commerce</h3>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Uma solução completa de e-commerce com foco em performance e experiência do usuário, construída com Next.js e Stripe.</p>
+<div class="mt-4 flex gap-4">
+<a class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-background-dark transition-colors hover:bg-primary/90" href="#">Ver Projeto</a>
+<a class="inline-flex items-center justify-center rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-800 transition-colors hover:bg-gray-100 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5" href="#">Código Fonte</a>
+</div>
+</div>
+</div>
+<!-- Card de Projeto 2 -->
+<div class="group flex flex-col overflow-hidden rounded-xl border border-gray-200/50 bg-background-light shadow-sm transition-all hover:shadow-lg dark:border-gray-800/50 dark:bg-background-dark dark:hover:shadow-primary/10">
+<div class="aspect-video w-full overflow-hidden">
+<div class="bg-center bg-no-repeat h-full w-full bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Dashboard analítico com gráficos e métricas" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFb9hiBbPKUkMyTUW-KQK1JxlBVwP1DTxN2NpW82hgtIJlDnkTL7dhboQOSfR-EPQaNdNxIGkXfzrIbjZIRZiV275ZRLx1EnJJy9OiHN-FWE9xhA7be-IG1hfZ6bXaN7BxwmHikrCKvxZvqEPDbJTrFq5-Lq4HOaiUCiN8qbfrlQcJUbWZRX5IMLJOVqU7E1GOKRnGw8GLAYK-AFR6FK1brAHSvv9ofYgd0ZYjJuqp8Vzs4KcaboG2W-ElR5MNlNk5LTtNhJjRZws");'></div>
+</div>
+<div class="flex flex-1 flex-col p-6">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Dashboard Analítico</h3>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Dashboard interativo para visualização de dados em tempo real, utilizando D3.js e uma API RESTful em Python.</p>
+<div class="mt-4 flex gap-4">
+<a class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-background-dark transition-colors hover:bg-primary/90" href="#">Ver Projeto</a>
+<a class="inline-flex items-center justify-center rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-800 transition-colors hover:bg-gray-100 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5" href="#">Código Fonte</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Seção Contato -->
+<section class="scroll-mt-24" id="contato">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Entre em Contato</h2>
+<p class="mt-4 text-base leading-relaxed text-gray-600 dark:text-gray-400">
+                        Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para me contatar através do formulário abaixo ou diretamente pelo meu e-mail.
+                    </p>
+<form action="#" class="mt-8 space-y-6">
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="name">Nome</label>
+<input class="mt-1 block w-full rounded-md border-gray-300 bg-white/50 shadow-sm focus:border-primary focus:ring-primary dark:border-gray-700 dark:bg-white/5 dark:text-white sm:text-sm" id="name" placeholder="Seu Nome" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="email">Email</label>
+<input class="mt-1 block w-full rounded-md border-gray-300 bg-white/50 shadow-sm focus:border-primary focus:ring-primary dark:border-gray-700 dark:bg-white/5 dark:text-white sm:text-sm" id="email" placeholder="seu@email.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="message">Mensagem</label>
+<textarea class="mt-1 block w-full rounded-md border-gray-300 bg-white/50 shadow-sm focus:border-primary focus:ring-primary dark:border-gray-700 dark:bg-white/5 dark:text-white sm:text-sm" id="message" placeholder="Sua mensagem..." rows="4"></textarea>
+</div>
+<div>
+<button class="inline-flex w-full items-center justify-center rounded-md bg-primary px-6 py-3 text-base font-medium text-background-dark transition-colors hover:bg-primary/90 sm:w-auto" type="submit">Enviar Mensagem</button>
+</div>
+</form>
+</section>
+</div>
+</main>
+</div>
+</body></html>

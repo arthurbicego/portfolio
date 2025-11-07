@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #0a0a0a;
+            color: #33ff33;
+        }
+        .blinking-cursor {
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            from, to {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a0a]">
+<div class="relative flex h-auto min-h-screen w-full flex-col font-display text-[#33ff33] group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center p-4 sm:p-6 md:p-8">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Left Pane: Profile + AI Terminal -->
+<div class="lg:col-span-2 flex flex-col gap-6">
+<!-- Profile Section -->
+<div class="border border-[#888888] p-4">
+<div class="flex w-full flex-col gap-4 @container @[520px]:flex-row @[520px]:justify-between">
+<div class="flex gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover min-h-32 w-32" data-alt="Pixelated avatar of the developer" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCghG4eibpYC9kQWlEW5K2rnvVmxVR3PPal_u6Arb9SpFY1sTMFmFtosToR76z0z8qok8ThS_juGJd71G_Ck1yeTCu67y-I26jytPUo546et-Fi9DWufHVAC3185dbL9jg-0LNCKVR2Ti54azI9W9QlL6QFDc0S6H6G4R9kEzpTNKmlWog56tZt4YGQrqbz76SHbhw3EhggReRU1j8XOwPlyECTRMXMN1OwyWIOf5IaSd0_kh69EuBH_SRYg6-DBtSCoIWrdDp1xFw"); image-rendering: pixelated;'></div>
+<div class="flex flex-col">
+<p class="text-[#33ff33] text-[22px] font-bold leading-tight tracking-[-0.015em]">C:\USERS\DEV\README.TXT</p>
+<p class="text-[#cccccc] text-base font-normal leading-normal">Full-Stack Developer. Welcome to my terminal.</p>
+<p class="text-[#cccccc] text-base font-normal leading-normal">Status: <span class="text-[#33ff33]">ONLINE</span></p>
+</div>
+</div>
+<div class="flex w-full max-w-[480px] gap-3 @[480px]:w-auto">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden h-10 px-4 bg-transparent border border-[#33ff33] text-[#33ff33] text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto hover:bg-[#33ff33]/20">
+<span class="truncate">View Resume</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden h-10 px-4 bg-[#33ff33] text-[#0a0a0a] text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto hover:opacity-90">
+<span class="truncate">Contact Me</span>
+</button>
+</div>
+</div>
+</div>
+<!-- AI Terminal Section -->
+<div class="border border-[#888888]">
+<h3 class="text-[#33ff33] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 border-b border-[#888888]">&gt; AI Terminal - Type 'help' for commands</h3>
+<div class="flex flex-col h-[400px]">
+<div class="flex-grow p-4 overflow-y-auto space-y-4">
+<!-- AI Message -->
+<div class="flex gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover size-10" data-alt="AI assistant pixelated icon" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKO0e0rSvIcA39atHdO0Ov8jnHLCTNOoTzQgtECWfNCZ_10YEuu8oDQSrMWcq4jgm6KgW3Jypi8AzCNeXLjVBQTfjLazFfinGOKAoBO0dGVlEwMmkcy_zvLdZADz1gw0IysKmCFmHT8GRybgySmovSVevw4_J2YAXx8XVvHWUPezsOiOnDDS68eBFWz04nWuIIEXnmgfrcqvMqbluG38X9GRHYbujDhFsKG9x28ZcTmDfQnOOqE0gkrGVA42ES3IvGJC8BKHcXZj4"); image-rendering: pixelated;'></div>
+<div class="flex flex-1 flex-col items-stretch gap-2">
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center gap-3">
+<p class="text-[#33ff33] text-base font-bold leading-tight">AI_ASSISTANT</p>
+<p class="text-[#888888] text-sm font-normal leading-normal">10:30 AM</p>
+</div>
+<p class="text-[#cccccc] text-base font-normal leading-normal">
+                                                        Greetings, user. I am the portfolio AI. Ask me about my creator's skills, experience, or projects. What would you like to know?
+                                                    </p>
+</div>
+</div>
+</div>
+<!-- User Message -->
+<div class="flex gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover size-10" data-alt="Guest user pixelated icon" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAeA_iJJzmefBLcU1CShVe1u0erqbHjPOcOj1ywTNti7cyvj7VwEGAXAs0Ht0bj8ghNurxvwEBCyrwhjAE9ljCkYjFvcNCSkp98Cs9mb0qjUYwEM08BUtBuvND9ml5H0m1MTHwErbJQvxppgy4rPXMX2ONp-iYGL93hW_fGAzgsV8wp_WzZnBkxWxrL6jmJJjQdvXNhUsYLz_sFqmidi2pvDYP3ijSzb4Nkuq82VUkJQVUdo9xXBLbzDClUbk7Jwu9OtVB5eT5MzRE"); image-rendering: pixelated;'></div>
+<div class="flex flex-1 flex-col items-stretch gap-2">
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center gap-3">
+<p class="text-[#33ff33] text-base font-bold leading-tight">GUEST</p>
+<p class="text-[#888888] text-sm font-normal leading-normal">10:31 AM</p>
+</div>
+<p class="text-[#cccccc] text-base font-normal leading-normal">
+                                                        Tell me about your projects.
+                                                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Composer -->
+<div class="flex items-center px-4 py-3 gap-3 border-t border-[#888888]">
+<label class="flex flex-col min-w-40 h-10 flex-1">
+<div class="flex w-full flex-1 items-stretch h-full">
+<div class="flex items-center bg-transparent text-[#33ff33] pr-2 text-base font-normal leading-normal">
+                                                  &gt; guest:
+                                                </div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-[#33ff33] focus:outline-0 focus:ring-0 border-none bg-transparent h-full placeholder:text-[#888888] p-0 text-base font-normal leading-normal" placeholder="" value=""/>
+<div class="blinking-cursor text-2xl font-mono">_</div>
+</div>
+</label>
+<button class="min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden h-8 px-4 bg-[#33ff33] text-[#0a0a0a] text-sm font-medium leading-normal hover:opacity-90">
+<span class="truncate">SEND</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Pane: Projects -->
+<div class="lg:col-span-1 border border-[#888888]">
+<h3 class="text-[#33ff33] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 border-b border-[#888888]">C:\PROJECTS&gt; ls -a</h3>
+<div class="p-4 space-y-4">
+<!-- Project Item 1 -->
+<div class="group cursor-pointer">
+<p class="text-[#33ff33] font-mono text-base">-rwxr-xr-x 1 dev users 4.2K Dec 12 2023 <span class="group-hover:bg-[#33ff33] group-hover:text-[#0a0a0a]">project_alpha.exe</span></p>
+<div class="pl-4 text-[#888888] font-mono text-sm hidden group-hover:block">
+<p>&gt; stack: [React, Node.js, PostgreSQL]</p>
+<p>&gt; desc: E-commerce platform with AI recommendations.</p>
+</div>
+</div>
+<!-- Project Item 2 -->
+<div class="group cursor-pointer">
+<p class="text-[#33ff33] font-mono text-base">-rwxr-xr-x 1 dev users 8.1K Nov 05 2023 <span class="group-hover:bg-[#33ff33] group-hover:text-[#0a0a0a]">cyber_dashboard.sh</span></p>
+<div class="pl-4 text-[#888888] font-mono text-sm hidden group-hover:block">
+<p>&gt; stack: [Vue.js, D3.js, Firebase]</p>
+<p>&gt; desc: Real-time data visualization dashboard.</p>
+</div>
+</div>
+<!-- Project Item 3 -->
+<div class="group cursor-pointer">
+<p class="text-[#33ff33] font-mono text-base">-rwxr-xr-x 1 dev users 2.5K Aug 20 2023 <span class="group-hover:bg-[#33ff33] group-hover:text-[#0a0a0a]">retro_game.py</span></p>
+<div class="pl-4 text-[#888888] font-mono text-sm hidden group-hover:block">
+<p>&gt; stack: [Python, Pygame]</p>
+<p>&gt; desc: A simple 2D platformer game engine.</p>
+</div>
+</div>
+<!-- Project Item 4 -->
+<div class="group cursor-pointer">
+<p class="text-[#33ff33] font-mono text-base">-rwxr-xr-x 1 dev users 6.7K Jun 15 2023 <span class="group-hover:bg-[#33ff33] group-hover:text-[#0a0a0a]">api_gateway.go</span></p>
+<div class="pl-4 text-[#888888] font-mono text-sm hidden group-hover:block">
+<p>&gt; stack: [Go, Docker, gRPC]</p>
+<p>&gt; desc: Microservices API gateway for a cloud application.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Status Bar -->
+<div class="w-full border-t border-[#888888] bg-[#0a0a0a] px-4 py-1 flex justify-between items-center text-sm font-mono text-[#cccccc] fixed bottom-0 left-0">
+<span>[STATUS: ONLINE] [CPU: 10%] [MEM: 15%]</span>
+<span>SYSTEM_TIME: <span id="current-time">10:32:45 AM</span></span>
+</div>
+</div>
+</div>
+<script>
+        // A simple script to update the time in the status bar
+        function updateTime() {
+            const timeElement = document.getElementById('current-time');
+            if (timeElement) {
+                const now = new Date();
+                timeElement.textContent = now.toLocaleTimeString();
+            }
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body></html>
